@@ -5,6 +5,55 @@
 
     <!-- Begin Page Content -->
     <div class="container-fluid">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .search-bar input {
+                padding: 8px;
+                width: 200px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table thead {
+                background-color: #f4f4f4;
+            }
+            table th, table td {
+                padding: 10px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+            table tbody tr {
+                cursor: grab;
+            }
+            table tbody tr:hover {
+                background-color: #f9f9f9;
+            }
+            .action-buttons a {
+                margin-right: 5px;
+                text-decoration: none;
+                color: #007bff;
+            }
+            .action-buttons a:hover {
+                color: #0056b3;
+            }
+        </style>
 
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">

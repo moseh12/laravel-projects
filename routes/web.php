@@ -1,12 +1,14 @@
 <?php
 
 use App\Http\Controllers\FaqsController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PendingCasesController;
-use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\CustomController;
 use App\Http\Controllers\TaxationController;
 use App\Http\Controllers\ItemListingController;
 use App\Http\Controllers\UserReportController;
+use App\Http\Controllers\NotificationsController;
 use App\Http\Controllers\ChatsController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\CategoryController;
@@ -22,6 +24,9 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AreasController;
 use App\Http\Controllers\CountriesController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SliderController;
+use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\FutureSectionController;
 use Illuminate\Support\Facades\Route;
 
