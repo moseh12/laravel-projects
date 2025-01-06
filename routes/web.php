@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\FaqsController;
+use App\Http\Controllers\RolesController;
+use App\Http\Controllers\StatesController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PendingCasesController;
 use App\Http\Controllers\CustomersController;
