@@ -16,7 +16,7 @@ use App\Http\Controllers\GeneralSettingsController;
 use Illuminate\Notifications\Notification;
 use App\Http\Controllers\BuyUtilitiesController;
 use App\Http\Controllers\TipsController;
-
+use App\Http\Controllers\StaffController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AreasController;
 use App\Http\Controllers\CountriesController;
