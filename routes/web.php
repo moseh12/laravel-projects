@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\FaqsController;
+use App\Http\Controllers\FireController;
+use App\Http\Controllers\RoadController;
+use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\StatesController;
 use App\Http\Controllers\BlogController;
@@ -88,6 +91,14 @@ Route::get('/city', [CityController::class, 'city'])->name('admin.city.index');
 
 Route::get('/states', [StatesController::class, 'states'])->name('admin.states.index');
 
+
+Route::get('/fire', [FireController::class, 'fire'])->name('admin.fire.index');
+
+
+Route::get('/medical', [MedicalController::class, 'medical'])->name('admin.medical.index');
+
+
+Route::get('/road', [RoadController::class, 'road'])->name('admin.road.index');
 
 Route::get('/areas', [AreasController::class, 'areas'])->name('admin.areas.index');
 

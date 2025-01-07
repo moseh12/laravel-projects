@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion " id="accordionSidebar">
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin.dashboard') }}">
         <div class="sidebar-brand-icon rotate-n-15">
@@ -208,12 +208,48 @@
     <div class="sidebar-heading">
         FRAUD CASES
     </div>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('admin.police.index') }}">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="emergencyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-shield-lock" style="color: red; text-shadow: 0 0 10px orange;"></i>
-            <span>Report to Police</span>
+            <span>Report Emergencies</span>
         </a>
+        <ul class="dropdown-menu" aria-labelledby="emergencyDropdown">
+            <li>
+                <a class="dropdown-item" href="{{ route('admin.police.index') }}">
+                    <i class="bi bi-police" style="color: blue;"></i> Police
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="{{ route('admin.fire.index') }}">
+                    <i class="bi bi-fire" style="color: orange;"></i> Fire
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="{{ route('admin.medical.index') }}">
+                    <i class="bi bi-heart-pulse" style="color: red;"></i> Medical
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="{{ route('admin.road.index') }}">
+                    <i class="bi bi-cone-striped" style="color: green;"></i> Roadside and Safety
+                </a>
+            </li>
+        </ul>
     </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="emergencyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-shield-lock" style="color: red; text-shadow: 0 0 10px orange;"></i>
+            <span>Report Emergencies</span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="emergencyDropdown">
+            <li><a class="dropdown-item" href="{{ route('admin.police.index') }}"><i class="bi bi-police" style="color: blue;"></i> Police</a></li>
+            <li><a class="dropdown-item" href="{{ route('admin.fire.index') }}"><i class="bi bi-fire" style="color: orange;"></i> Fire</a></li>
+            <li><a class="dropdown-item" href="{{ route('admin.medical.index') }}"><i class="bi bi-heart-pulse" style="color: red;"></i> Medical</a></li>
+            <li><a class="dropdown-item" href="{{ route('admin.road.index') }}"><i class="bi bi-cone-striped" style="color: green;"></i> Roadside and Safety</a></li>
+        </ul>
+    </li>
+
+
     <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.pending_cases.index') }}">
             <i class="bi bi-journal-text"style="color: orange; text-shadow: 0 0 10px orange;"></i>
@@ -305,3 +341,4 @@
     </li>
 </ul>
 <!-- End of Sidebar -->
+
