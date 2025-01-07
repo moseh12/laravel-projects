@@ -14,13 +14,13 @@ margin: 20px;
 }
 .container {
 display: flex;
-gap: 20px;
+gap: 10px;
 }
 .form-section {
 flex: 1;
 border: 1px solid #ccc;
-padding: 15px;
-border-radius: 8px;
+padding: 5px;
+border-radius: 3px;
 background-color: #f9f9f9;
 }
 .table-section {
@@ -35,15 +35,15 @@ margin-bottom: 15px;
 .form-group label {
 display: block;
 font-weight: bold;
-margin-bottom: 5px;
+margin-bottom: 3px;
 }
 .form-group input[type="text"],
 .form-group input[type="number"],
 .form-group input[type="file"],
 .form-group select {
 width: 100%;
-padding: 8px;
-margin-bottom: 5px;
+padding: 3px;
+margin-bottom: 1px;
 border: 1px solid #ccc;
 border-radius: 4px;
 }
@@ -61,7 +61,7 @@ border-collapse: collapse;
 }
 th, td {
 border: 1px solid #ddd;
-padding: 8px;
+padding: 5px;
 text-align: left;
 }
 th {
